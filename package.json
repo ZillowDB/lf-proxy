@@ -9,8 +9,7 @@
   },
   "scripts": {
     "artillery": "artillery run -o loading/artillery.log loading/artillery-server.yml",
-    "start": "nodemon server/server.js",
-    "babel": "babel client/src -d server/views/"
+    "start": "nodemon server/server.js"
   },
   "dependencies": {
     "artillery": "^1.6.0-25",
