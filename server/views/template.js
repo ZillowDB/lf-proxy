@@ -7,7 +7,7 @@ module.exports = (title, initialState = {}, content = '') => {
                 <script src="http://localhost:3004/client/src/client.js"></script>
                 `;
   } else {
-    scripts = ' <script src="http://localhost:3004/dist/bundle.js></script>';
+    scripts = ' <script src="http://localhost:3004/dist/bundle.js"></script>';
   }
 
   const page = `<!DOCTYPE html>
@@ -32,5 +32,6 @@ module.exports = (title, initialState = {}, content = '') => {
     </body>
     </html>
     `;
+
   return page;
 };
