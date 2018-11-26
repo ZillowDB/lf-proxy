@@ -1,1 +1,15 @@
+*.log
+.DS_Store
 node_modules
+
+# Bundle + media files
+public/dist/bundle.js
+public/assets/media/*jpg
+
+*.csv
+*.csv.gz
+
+## secrets
+.env
+*.pem
+newrelic.js
