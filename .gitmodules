@@ -1,0 +1,12 @@
+[submodule "image-carousel"]
+	path = image-carousel
+	url = https://github.com/ZillowDB/image-carousel.git
+[submodule "mortgage-calculator"]
+	path = mortgage-calculator
+	url = https://github.com/ZillowDB/mortgage-calculator.git
+[submodule "detailed-part"]
+	path = detailed-part
+	url = https://github.com/ZillowDB/detailed-part.git
+[submodule "nearby-homes"]
+	path = nearby-homes
+	url = https://github.com/ZillowDB/nearby-homes.git
