@@ -1,0 +1,5 @@
+.selectedImage {
+  height: 100%;
+  position: fixed;
+  left: 15%;
+}

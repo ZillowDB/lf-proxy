@@ -13,3 +13,8 @@ public/assets/media/*jpg
 .env
 *.pem
 newrelic.js
+
+## Dev for SSR
+server/views/components/
+server/views/image.css
+server/views/server.js

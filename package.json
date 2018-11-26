@@ -9,7 +9,8 @@
   },
   "scripts": {
     "artillery": "artillery run -o loading/artillery.log loading/artillery-server.yml",
-    "start": "nodemon server/server.js"
+    "start": "nodemon server/server.js",
+    "babel": "babel client/src -d server/views/",
   },
   "dependencies": {
     "artillery": "^1.6.0-25",
@@ -19,5 +20,13 @@
     "newrelic": "^4.11.0",
     "react": "^16.6.0",
     "react-dom": "^16.6.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/preset-env": "^7.1.6",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "babel-plugin-css-modules-transform": "^1.6.2",
   }
 }

@@ -1,0 +1,68 @@
+.left {
+  font-size: 45px;
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  color: #fff8ea;
+  float: left;
+}
+
+.right {
+  font-size: 45px;
+  position: relative;
+  display: inline-block;
+  top: 0px;
+  color: #fff8ea;
+  float: right;
+}
+
+.right:hover, .left:hover {
+  color: #4198FF;
+}
+
+.arrowBlock {
+  opacity: 0.7;
+  float: left;
+  position: relative;
+  display: inline-block;
+  top: 240px;
+  z-index: 500;
+  background-color: #4f4849;
+  margin-left: 5px;
+  border: solid white 0.5px;
+  padding: 5px;
+}
+
+.leftArrow {
+  opacity: 0.7;
+  float: left;
+  position: relative;
+  display: inline-block;
+  top: 240px;
+  z-index: 500;
+  background-color: #4f4849;
+  margin-left: 5px;
+  border: solid white 0.5px;
+  padding: 5px;
+  float: left;
+}
+
+.rightArrow {
+  opacity: 0.7;
+  float: left;
+  position: relative;
+  display: inline-block;
+  top: 240px;
+  z-index: 500;
+  background-color: #4f4849;
+  margin-left: 5px;
+  border: solid white 0.5px;
+  padding: 5px;
+  float: right;
+}
+
+ .rightArrow:hover, .leftArrow:hover {
+  opacity: 0.95;
+  transition: 0.3s;
+}
+

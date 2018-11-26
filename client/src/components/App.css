@@ -1,0 +1,12 @@
+.carouselVisible {
+  overflow: 'visible';
+}
+
+.carouselHidden {
+  overflow: 'hidden';
+}
+
+.viewStyle {
+  position: 'relative';
+  right: '0px';
+}

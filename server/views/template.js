@@ -1,10 +1,10 @@
-module.exports = (title, initialState = {}, content = '') => {
+module.exports = (title, content = '', initialState = {}) => {
   let scripts = '';
   if (content) {
     scripts = ` <script>
                   window.__STATE__ = ${JSON.stringify(initialState)}
                 </script>
-                <script src="http://localhost:3004/client/src/client.js"></script>
+                ${content}
                 `;
   } else {
     scripts = ' <script src="http://localhost:3004/dist/bundle.js"></script>';

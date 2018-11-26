@@ -4,6 +4,7 @@ const path = require('path');
 const express = require('express');
 const httpProxy = require('http-proxy');
 const template = require('./views/template');
+const imageRender = require('./views/server').default;
 
 const port = process.env.PORT || 3000;
 
@@ -15,13 +16,22 @@ const serverImages = process.env.IMAGES;
 
 const app = express();
 
+app.get('/', (req, res) => {
+  const content = imageRender();
+  const response = template('Zillow rendered Server-side', content);
+  console.log(content)
+  res.setHeader('Cache-Control', 'assets, max-age=604800');
+  res.send(response);
+});
 
+// Client side render of page
 app.get('/client', (req, res) => {
   const response = template('Zillow rendered Client-side');
   res.setHeader('Cache-Control', 'assets, max-age=604800');
   res.send(response);
 });
 
+// Static files
 app.use(express.static(path.resolve(__dirname, '../public')));
 
 // app.all('/homes/:home/prices', (req, res) => {
