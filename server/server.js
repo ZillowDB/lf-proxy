@@ -19,7 +19,6 @@ const app = express();
 app.get('/', (req, res) => {
   const content = imageRender();
   const response = template('Zillow rendered Server-side', content);
-  console.log(content)
   res.setHeader('Cache-Control', 'assets, max-age=604800');
   res.send(response);
 });
