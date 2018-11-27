@@ -5,6 +5,14 @@ body {
 /*---------------
     #Collapsible Title
 ---------------*/
+#carousel {
+  max-width: 1024px;
+  height: 440px !important;
+}
+
+img {
+  height: inherit;
+}
 
 .collapsible-title-container {
   max-width: 1024px;
