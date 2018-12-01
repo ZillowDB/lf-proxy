@@ -1,4 +1,4 @@
-module.exports = (title, content = '') => {
+module.exports = (title, content = '', scripts) => {
   let scripts = '';
   let styles = '<link rel="stylesheet" href="styles-homes.css">';
   if (content) {
@@ -28,10 +28,10 @@ module.exports = (title, content = '') => {
           <div id="app"></div>
           <div id="homes"></div>
       </div>
-      <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-      <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-      ${scripts}
     </body>
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    ${scripts}
     </html>
     `;
 
